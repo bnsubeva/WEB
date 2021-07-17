@@ -1,0 +1,137 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 4.5rem;
+  background-image: url('./background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+.form {
+  width: 100%;
+  max-width: 80vw;
+  padding: 1rem;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  color: white;
+  text-align:center;
+}
+
+#preview {
+  padding-right: 30%;
+}
+
+#message {
+  color:white;
+  display: flex;
+  justify-content: center;
+}
+ 
+p {
+  color:white;
+}
+
+.button-container,
+.admin {
+  color:white;
+}
+
+.error {
+  font-weight: bold;
+  color: #FF0000;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-size: 20px;
+}
+
+@media only screen  and (min-width : 768px) {
+  .form {
+    max-width: 50vw;
+  }
+}
+
+@media only screen  and (min-width : 1224px) {
+  .form {
+    max-width: 35vw;
+  }
+}
+
+.form .checkbox {
+  font-weight: 400;
+}
+
+.form .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+.form .form-control:focus {
+  z-index: 2;
+}
+
+.form .form-group,
+.form > input {
+  margin-bottom: 1rem;
+}
+
+.form .form-group input {
+  margin-bottom: -1px;
+}
+
+.form .form-group input:not(:last-of-type) {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form .form-group input:not(:first-of-type) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.card-header {
+  text-align: center;
+}
+
+
+@media (max-width: 576px) {  
+  html, body {
+    height: auto;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 768px) {  
+  html, body {
+    height: auto;
+  }
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) and (max-width: 992px) {  
+  html, body {
+    height: auto;
+  }
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) { 
+  html, body {
+    height: auto;
+  }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+}
